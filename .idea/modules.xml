@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/rallygeologico.iml" filepath="$PROJECT_DIR$/rallygeologico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rallygeologico-app/rallygeologico-app.iml" filepath="$PROJECT_DIR$/rallygeologico-app/rallygeologico-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rallygeologico-core/rallygeologico-core.iml" filepath="$PROJECT_DIR$/rallygeologico-core/rallygeologico-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rallygeologico-ws/rallygeologico-ws.iml" filepath="$PROJECT_DIR$/rallygeologico-ws/rallygeologico-ws.iml" />
+    </modules>
+  </component>
+</project>
