@@ -6,8 +6,13 @@
 
     <groupId>cr.ac.ucr.cicg.clavicusoft.rallygeologico</groupId>
     <artifactId>rallygeologico</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <url>http://maven.apache.org</url>
+    <modules>
+        <module>rallygeologico-core</module>
+        <module>rallygeologico-ws</module>
+    </modules>
 
-    
+
 </project>
