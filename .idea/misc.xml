@@ -7,7 +7,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/rallygeologico-core/pom.xml" />
         <option value="$PROJECT_DIR$/rallygeologico-app/pom.xml" />
         <option value="$PROJECT_DIR$/rallygeologico-ws/pom.xml" />
       </list>
