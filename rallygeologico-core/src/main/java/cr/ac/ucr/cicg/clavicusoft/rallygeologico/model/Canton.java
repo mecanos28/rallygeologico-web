@@ -11,9 +11,19 @@ public class Canton extends BasicEntity {
     @Column(name="Name")
     private String name;
 
-    @OneToMany(mappedBy = "HasDistrict")
+    @OneToMany(mappedBy = "relatedDistricts")
     private Set<District> districts;
 
     @ManyToOne
     private Province province;
+
+    @Override
+    public boolean onEquals(Object o) {
+        return false;
+    }
+
+    @Override
+    public int onHashCode(int result) {
+        return 0;
+    }
 }

@@ -35,8 +35,11 @@ public class Site extends BasicEntity{
     @ManyToOne
     private Province province;
 
-    @ManyToMany(mappedBy = "isAssociatedWith")
+    @ManyToMany(mappedBy = "RelatedTerms")
     private Set<Term> terms;
+
+    @ManyToMany(mappedBy = "RelatedCompetitionStatistics")
+    private Set<CompetitionStatistics> competitionStatistics;
 
     @Override
     public boolean onEquals(Object o) {

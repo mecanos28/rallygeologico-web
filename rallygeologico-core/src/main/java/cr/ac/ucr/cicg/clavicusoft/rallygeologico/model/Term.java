@@ -23,7 +23,7 @@ public class Term extends BasicEntity {
     @Column(name="VideoUrl")
     private String videoUrl;
 
-    @ManyToMany(mappedBy = "isAssociatedWith")
+    @ManyToMany(mappedBy = "relatedSites")
     private Set<Site> sites;
 
     @Override

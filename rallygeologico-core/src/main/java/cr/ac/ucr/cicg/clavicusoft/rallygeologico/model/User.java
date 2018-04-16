@@ -1,6 +1,7 @@
 package cr.ac.ucr.cicg.clavicusoft.rallygeologico.model;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "User")
@@ -24,6 +25,18 @@ public class User extends BasicEntity{
 
     @Column(name="PhotoUrl")
     private String photoUrl;
+
+    @OneToMany(mappedBy="Host")
+    private Set<Invitation> sentInvitations;
+
+    @OneToMany(mappedBy="Guest")
+    private Set<Invitation> receivedInvitations;
+
+    @OneToOne
+    private Competition competition;
+
+    @OneToMany(mappedBy="competitionStatistics")
+    private Set<CompetitionStatistics> competitionStatistics;
 
     @Override
     public boolean onEquals(Object o) {

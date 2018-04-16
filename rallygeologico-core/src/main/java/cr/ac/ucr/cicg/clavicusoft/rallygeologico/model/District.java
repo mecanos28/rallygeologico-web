@@ -12,4 +12,14 @@ public class District extends BasicEntity {
 
     @ManyToOne
     private Canton canton;
+
+    @Override
+    public boolean onEquals(Object o) {
+        return false;
+    }
+
+    @Override
+    public int onHashCode(int result) {
+        return 0;
+    }
 }

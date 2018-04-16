@@ -1,7 +1,9 @@
 package cr.ac.ucr.cicg.clavicusoft.rallygeologico.model;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 @Table(name = "CompetitionStatistics")
@@ -16,13 +18,19 @@ public class CompetitionStatistics extends BasicEntity {
     private boolean competitionId;
 
     @Column(name="StartingDate")
-    private Date startingDate;
+    private Timestamp startingDate;
 
     @Column(name="FinishingDate")
-    private Date finishingDate;
+    private Timestamp finishingDate;
 
     @Column(name = "Points")
     private int points;
+
+    @ManyToOne
+    private User relatedUser;
+
+    @ManyToMany(mappedBy="RelatedSites")
+    private Set<Site> relatedSites;
 
     @Override
     public boolean onEquals(Object o) {

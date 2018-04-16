@@ -11,10 +11,19 @@ public class Province extends BasicEntity{
     @Column(name="Name")
     private String name;
 
-    @OneToMany(mappedBy = "HasCanton")
+    @OneToMany(mappedBy = "relatedCantons")
     private Set<Canton> cantons;
 
-    @OneToMany(mappedBy = "Sites")
+    @OneToMany(mappedBy = "relatedSites")
     private Set<Site> sites;
 
+    @Override
+    public boolean onEquals(Object o) {
+        return false;
+    }
+
+    @Override
+    public int onHashCode(int result) {
+        return 0;
+    }
 }

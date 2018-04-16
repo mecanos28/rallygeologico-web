@@ -15,13 +15,13 @@ public class Invitation extends BasicEntity{
     @Column(name="Accepted")
     private boolean accepted;
 
-    @OneToOne(mappedBy="relatedCompetitions")
-    private Set<Competition> competitions;
+    @ManyToOne()
+    private Competition competition;
 
-    @OneToOne(mappedBy="HostId")
+    @ManyToOne()
     private User hostId;
 
-    @OneToOne(mappedBy="GuestId")
+    @ManyToOne()
     private User guestId;
 
     @Override

@@ -23,6 +23,9 @@ public class Rally extends BasicEntity{
     @Column(name="ImageUrl")
     private String imageUrl;
 
+    @ManyToMany(mappedBy = "relatedSites")
+    private Set<Site> sites;
+
     @OneToMany(mappedBy = "relatedCompetitions")
     private Set<Competition> competitions;
 
