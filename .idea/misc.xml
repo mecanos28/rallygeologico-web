@@ -8,7 +8,6 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/rallygeologico-app/pom.xml" />
-        <option value="$PROJECT_DIR$/rallygeologico-ws/pom.xml" />
       </list>
     </option>
   </component>

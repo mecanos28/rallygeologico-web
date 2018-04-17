@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="rallygeologico-app" />
         <module name="rallygeologico-core" />
-        <module name="rallygeologico-ws" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
