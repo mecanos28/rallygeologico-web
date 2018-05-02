@@ -91,7 +91,6 @@ export class RegisterComponent implements OnInit {
       .then((res: LoginResponse) => {
         console.log('Logged in', res);
         this.getProfile();
-        this.registerWithFacebook = true;
       })
       .catch(this.handleErrorLogin);
   }
@@ -113,6 +112,7 @@ export class RegisterComponent implements OnInit {
         this.email = res.email;
         this.photoUrl = res.picture.data.url;
         console.log(this.fbId +" "+this.firstName +" "+ this.lastName +" "+this.email);
+        this.registerWithFacebook = true;
         return res;
       })
       .catch(this.handleErrorProfile);
